@@ -1,4 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
 
     <!-- Base app theme tanpa ActionBar (buat Navigation Drawer) -->
     <style name="Theme.NavigationDrawer.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
@@ -7,12 +8,12 @@
     </style>
 
     <!-- Overlay untuk AppBar (Toolbar) -->
-    <!-- Boleh pakai overlay AppCompat walaupun base theme Material3 -->
     <style name="Theme.NavigationDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <!-- Popup theme untuk menu pada Toolbar (overflow, dsb.) -->
+    <!-- Popup theme untuk menu pada Toolbar -->
     <style name="Theme.NavigationDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <!-- (Opsional) jika masih ada referensi ke Theme.LAB_WEEK_04 -->
+    <!-- (opsional) alias lama jika masih direferensikan -->
     <style name="Theme.LAB_WEEK_04" parent="Theme.NavigationDrawer.NoActionBar" />
+
 </resources>

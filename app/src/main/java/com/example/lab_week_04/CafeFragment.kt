@@ -22,11 +22,11 @@ class CafeFragment : Fragment() {
         val viewPager = view.findViewById<ViewPager2>(R.id.view_pager)
         val tabLayout = view.findViewById<TabLayout>(R.id.tab_layout)
 
-        val adapter = CafeAdapter(childFragmentManager, lifecycle)
-        viewPager.adapter = adapter
+        // Pakai adapter baru yang sudah mengirim konten per tab
+        viewPager.adapter = CafeAdapter(this)
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = resources.getString(TABS_FIXED[position])
+            tab.text = getString(TABS_FIXED[position])   // <— tanpa named arg
         }.attach()
     }
 }

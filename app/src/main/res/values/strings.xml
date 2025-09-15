@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!-- App -->
     <string name="app_name">LAB_WEEK_04</string>
     <string name="app_title">Coffee App</string>
@@ -21,16 +22,32 @@
     <string name="affogato_desc">Espresso poured on a vanilla ice cream. Served in a cappuccino cup.</string>
 
     <string name="americano_title">AMERICANO</string>
-    <string name="americano_desc">Espresso with added hot water (100–150 ml).</string>
+    <string name="americano_desc">Espresso with added hot water (100-150 ml).</string>
 
     <string name="latte_title">CAFFE LATTE</string>
     <string name="latte_desc">Espresso with steamed milk and a little foam.</string>
 
-    <!-- Cafe Fragment -->
+    <!-- Cafe (Tabs) -->
     <string name="cafe_list">Cafe List</string>
+
     <string name="starbucks_title">STARBUCKS</string>
+    <string name="starbucks_desc">
+        Starbucks Corporation is an American multinational chain of coffeehouses and roastery
+        reserves headquartered in Seattle, Washington. It is the worlds largest coffeehouse chain.
+    </string>
+
     <string name="janjijiwa_title">JANJI JIWA</string>
+    <string name="janjijiwa_desc">
+        It is undeniable that Janji Jiwa outlets have spread to many places. Janji Jiwa is a local
+        coffee brand popular among students, workers, and families. With the slogan coffee from the
+        heart, Janji Jiwa is committed to serving coffee with a classic taste for coffee lovers.
+    </string>
+
     <string name="kopikenangan_title">KOPI KENANGAN</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="kopikenangan_desc">
+        At Kopi Kenangan, their dream is to serve high quality coffee made with the freshest local
+        ingredients to customers across Indonesia and the rest of the world.
+    </string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
