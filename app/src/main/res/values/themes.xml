@@ -1,9 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.LAB_WEEK_04" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Base app theme tanpa ActionBar (buat Navigation Drawer) -->
+    <style name="Theme.NavigationDrawer.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.LAB_WEEK_04" parent="Base.Theme.LAB_WEEK_04" />
+    <!-- Overlay untuk AppBar (Toolbar) -->
+    <!-- Boleh pakai overlay AppCompat walaupun base theme Material3 -->
+    <style name="Theme.NavigationDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Popup theme untuk menu pada Toolbar (overflow, dsb.) -->
+    <style name="Theme.NavigationDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- (Opsional) jika masih ada referensi ke Theme.LAB_WEEK_04 -->
+    <style name="Theme.LAB_WEEK_04" parent="Theme.NavigationDrawer.NoActionBar" />
 </resources>
